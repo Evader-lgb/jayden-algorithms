@@ -58,9 +58,9 @@ class Solution {
 
         int left = 0;
         int right = x;
-        while (left < right){
+        while (left <= right){
             int middle = left + (right - left)/2;
-            if(middle * middle <= x){
+            if((long)middle * middle <= x){
                 result = middle;
                 left = middle + 1;
             }else {
