@@ -51,12 +51,8 @@ public class P912_SortAnArray{
 //力扣代码
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+
     public int[] sortArray(int[] nums) {
-        return null;
-    }
-
-
-    public int[] sortArray2(int[] nums) {
         if (nums == null || nums.length <= 1) {
             return nums;
         }
