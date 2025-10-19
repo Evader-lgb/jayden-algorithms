@@ -80,6 +80,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P179_LargestNumber .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/doc/content/P179_LargestNumber .md" />
+              <option name="frontendQuestionId" value="leetcode.cn179" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P179_LargestNumber .java" />
+              <option name="titleSlug" value="largest-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P19_RemoveNthNodeFromEndOfList .java">
           <value>
             <LeetcodeEditor>
