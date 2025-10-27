@@ -278,6 +278,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P54_SpiralMatrix .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/doc/content/P54_SpiralMatrix .md" />
+              <option name="frontendQuestionId" value="leetcode.cn54" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P54_SpiralMatrix .java" />
+              <option name="titleSlug" value="spiral-matrix" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P56_MergeIntervals .java">
           <value>
             <LeetcodeEditor>
