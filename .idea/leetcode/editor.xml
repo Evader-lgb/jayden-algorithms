@@ -36,6 +36,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P103_BinaryTreeZigzagLevelOrderTraversal .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/doc/content/P103_BinaryTreeZigzagLevelOrderTraversal .md" />
+              <option name="frontendQuestionId" value="leetcode.cn103" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P103_BinaryTreeZigzagLevelOrderTraversal .java" />
+              <option name="titleSlug" value="binary-tree-zigzag-level-order-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P104_MaximumDepthOfBinaryTree .java">
           <value>
             <LeetcodeEditor>
