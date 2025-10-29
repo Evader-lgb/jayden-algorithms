@@ -81,6 +81,7 @@ class Solution {
     public String decode(String decodeStr){
         StringBuilder sb = new StringBuilder();
         int n = decodeStr.length();
+        // TODO要知道每个变量的作用，这里刚开始不知道写到了循环内了
         int num = 0;
         while (index < n){
             char c = decodeStr.charAt(index);
