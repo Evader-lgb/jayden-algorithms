@@ -58,6 +58,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P105_ConstructBinaryTreeFromPreorderAndInorderTraversal .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/doc/content/P105_ConstructBinaryTreeFromPreorderAndInorderTraversal .md" />
+              <option name="frontendQuestionId" value="leetcode.cn105" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P105_ConstructBinaryTreeFromPreorderAndInorderTraversal .java" />
+              <option name="titleSlug" value="construct-binary-tree-from-preorder-and-inorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P1143_LongestCommonSubsequence .java">
           <value>
             <LeetcodeEditor>
