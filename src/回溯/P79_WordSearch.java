@@ -47,7 +47,7 @@
 // Related Topics 深度优先搜索 数组 字符串 回溯 矩阵 👍 2078 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 回溯;
 
 /**
  * 单词搜索
