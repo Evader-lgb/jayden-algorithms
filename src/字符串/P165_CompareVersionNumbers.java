@@ -63,7 +63,7 @@
 // Related Topics 双指针 字符串 👍 484 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 字符串;
 
 /**
  * 比较版本号

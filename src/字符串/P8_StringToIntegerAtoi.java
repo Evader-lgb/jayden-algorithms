@@ -119,7 +119,7 @@
 // Related Topics 字符串 👍 1925 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 字符串;
 
 /**
  * 字符串转换整数 (atoi)

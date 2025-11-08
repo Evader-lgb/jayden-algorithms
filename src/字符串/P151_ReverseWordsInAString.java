@@ -51,7 +51,7 @@
 // Related Topics 双指针 字符串 👍 1353 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 字符串;
 
 /**
  * 反转字符串中的单词

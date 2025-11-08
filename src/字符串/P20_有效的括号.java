@@ -1,4 +1,4 @@
-package hot100_2025;
+package 字符串;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -12,7 +12,7 @@ import java.util.LinkedList;
  * 左括号必须以正确的顺序闭合。
  * 每个右括号都有一个对应的相同类型的左括号。
  */
-public class 有效的括号 {
+public class P20_有效的括号 {
     public static void main(String[] args) {
         isValid("(){}}{");
 //        isValid2("(){}}{");

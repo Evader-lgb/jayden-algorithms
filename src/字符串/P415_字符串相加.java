@@ -1,4 +1,4 @@
-package hot100_2025;
+package 字符串;
 
 /**
  * <p>Title: 字符串相加</p>
@@ -8,7 +8,7 @@ package hot100_2025;
  * <date>2025/09/10</date>
  * <p>解法：模拟加法过程（双指针），从个位开始逐位相加，考虑进位。</p>
  */
-public class 字符串相加 {
+public class P415_字符串相加 {
     public String addStrings(String num1, String num2) {
         int i = num1.length() - 1;
         int j = num2.length() - 1;

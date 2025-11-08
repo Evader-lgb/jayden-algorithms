@@ -54,9 +54,7 @@
 // Related Topics 字符串 👍 273 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
-
-import org.w3c.dom.xpath.XPathResult;
+package 字符串;
 
 /**
  * 验证IP地址

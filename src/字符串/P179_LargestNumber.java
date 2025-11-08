@@ -29,7 +29,7 @@
 // Related Topics 贪心 数组 字符串 排序 👍 1368 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 字符串;
 
 import java.util.Arrays;
 import java.util.Objects;

@@ -29,10 +29,7 @@
 // Related Topics 数学 字符串 模拟 👍 1451 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
-
-import java.util.ArrayList;
-import java.util.List;
+package 字符串;
 
 /**
  * 字符串相乘
