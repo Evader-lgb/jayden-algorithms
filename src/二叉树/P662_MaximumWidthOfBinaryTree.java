@@ -49,7 +49,7 @@
 // Related Topics 树 深度优先搜索 广度优先搜索 二叉树 👍 712 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 二叉树;
 
 import java.util.LinkedList;
 import java.util.Queue;

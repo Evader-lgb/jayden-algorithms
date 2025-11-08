@@ -1,46 +1,27 @@
-//给你二叉树的根节点 root ，返回它节点值的 前序 遍历。 
+//给定一个二叉树的根节点 root ，返回 它的 中序 遍历 。 
 //
 // 
 //
 // 示例 1： 
-//
 // 
-// 输入：root = [1,null,2,3] 
 // 
-//
-// 输出：[1,2,3] 
-//
-// 解释： 
-//
+//输入：root = [1,null,2,3]
+//输出：[1,3,2]
 // 
 //
 // 示例 2： 
 //
 // 
-// 输入：root = [1,2,3,4,5,null,8,null,null,6,7,9] 
-// 
-//
-// 输出：[1,2,4,5,6,7,3,8,9] 
-//
-// 解释： 
-//
+//输入：root = []
+//输出：[]
 // 
 //
 // 示例 3： 
 //
 // 
-// 输入：root = [] 
+//输入：root = [1]
+//输出：[1]
 // 
-//
-// 输出：[] 
-//
-// 示例 4： 
-//
-// 
-// 输入：root = [1] 
-// 
-//
-// 输出：[1] 
 //
 // 
 //
@@ -53,25 +34,25 @@
 //
 // 
 //
-// 进阶：递归算法很简单，你可以通过迭代算法完成吗？ 
+// 进阶: 递归算法很简单，你可以通过迭代算法完成吗？ 
 //
-// Related Topics 栈 树 深度优先搜索 二叉树 👍 1356 👎 0
+// Related Topics 栈 树 深度优先搜索 二叉树 👍 2294 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 二叉树;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 二叉树的前序遍历
+ * 二叉树的中序遍历
  * @author Jayden
- * @date 2025-10-10 23:11:37
+ * @date 2025-09-15 19:54:51
  */
-public class P144_BinaryTreePreorderTraversal{
+public class P94_BinaryTreeInorderTraversal{
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new P144_BinaryTreePreorderTraversal().new Solution();
+	 	 Solution solution = new P94_BinaryTreeInorderTraversal().new Solution();
 	 }
 	 
 //力扣代码
@@ -92,20 +73,21 @@ public class P144_BinaryTreePreorderTraversal{
  * }
  */
 class Solution {
-    public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
-        tree(res,root);
-        return res;
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        digui(root,result);
+        return result;
     }
 
-    public void tree(List<Integer> res,TreeNode node){
-        if (node == null){
-            return;
+    public void digui(TreeNode root,List<Integer> result){
+        if (root != null){
+            digui(root.left,result);
+            result.add(root.val);
+            digui(root.right,result);
         }
-        res.add(node.val);
-        tree(res,node.left);
-        tree(res,node.right);
     }
+
+}
 
     public class TreeNode {
       int val;
@@ -114,12 +96,11 @@ class Solution {
       TreeNode() {}
       TreeNode(int val) { this.val = val; }
       TreeNode(int val, TreeNode left, TreeNode right) {
-         this.val = val;
+          this.val = val;
           this.left = left;
           this.right = right;
       }
   }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

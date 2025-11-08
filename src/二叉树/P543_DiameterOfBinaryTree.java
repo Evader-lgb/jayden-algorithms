@@ -33,7 +33,7 @@
 // Related Topics 树 深度优先搜索 二叉树 👍 1814 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 二叉树;
 
 /**
  * 二叉树的直径

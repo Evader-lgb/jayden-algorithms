@@ -35,7 +35,7 @@
 // Related Topics 树 广度优先搜索 二叉树 👍 990 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 二叉树;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

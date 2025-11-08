@@ -34,7 +34,7 @@
 // Related Topics 树 数组 哈希表 分治 二叉树 👍 2617 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 二叉树;
 
 import java.util.HashMap;
 import java.util.Map;
