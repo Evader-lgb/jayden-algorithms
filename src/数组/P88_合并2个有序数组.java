@@ -1,8 +1,8 @@
-package hot100_2025;
+package 数组;
 
 import java.util.Arrays;
 
-public class 合并2个有序数组 {
+public class P88_合并2个有序数组 {
     public static void main(String[] args) {
 
     }

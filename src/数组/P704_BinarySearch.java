@@ -32,7 +32,7 @@
 // Related Topics 数组 二分查找 👍 1792 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 数组;
 
 /**
  * 二分查找

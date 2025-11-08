@@ -34,7 +34,7 @@
 // Related Topics 数组 双指针 👍 2748 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 数组;
 
 /**
  * 移动零

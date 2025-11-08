@@ -48,7 +48,7 @@
 // Related Topics 数组 双指针 排序 👍 7699 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 数组;
 
 import java.util.ArrayList;
 import java.util.Arrays;

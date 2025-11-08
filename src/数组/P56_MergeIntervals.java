@@ -39,7 +39,7 @@
 // Related Topics 数组 排序 👍 2667 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 数组;
 
 import java.util.ArrayList;
 import java.util.Arrays;

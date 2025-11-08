@@ -33,7 +33,7 @@
 // Related Topics 数组 数学 矩阵 👍 2146 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 数组;
 
 /**
  * 旋转图像

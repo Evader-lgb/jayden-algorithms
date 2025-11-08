@@ -45,7 +45,7 @@
 // Related Topics 数组 二分查找 👍 3267 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 数组;
 
 /**
  * 搜索旋转排序数组

@@ -31,7 +31,7 @@
 // Related Topics 数组 分治 快速选择 排序 堆（优先队列） 👍 2831 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 数组;
 
 import java.util.ArrayList;
 import java.util.List;
