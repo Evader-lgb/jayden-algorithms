@@ -1,4 +1,4 @@
-package 力扣刷题之路.day1_231229;
+package hot100_2025.leetcode.editor.cn;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,6 +30,29 @@ public class 无重复字符的最长子串 {
             }
             // 判断当前字符串长度与最大长度那个大
             map.put(s.charAt(end),end);
+            max = Math.max(max,end - start + 1);
+        }
+
+        return max;
+    }
+
+    public static int lengthOfLongestSubstring2(String str) {
+        int max = 0;
+        // 临界值判断，如果长度为0，直接返回
+        if (str.length() == 0){
+            return max;
+        }
+
+        // 定义一个散列表，key为字符的值，value是字符所在的下标
+        Map<Character,Integer> dis = new HashMap<>();
+
+        // 设置开始，结束位置。遍历str的char数组
+        for (int start = 0,end = 0; end < str.length(); end++) {
+            if(dis.containsKey(str.charAt(end))){
+                // 如果当前字符在map中，做更新
+                start = Math.max(start,dis.get(str.charAt(end)) + 1);
+            }
+            dis.put(str.charAt(end),end);
             max = Math.max(max,end - start + 1);
         }
 

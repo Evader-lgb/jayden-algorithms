@@ -1,4 +1,4 @@
-package 力扣刷题之路.day1_231229;
+package hot100_2025.leetcode.editor.cn;
 
 import java.util.HashMap;
 import java.util.Map;

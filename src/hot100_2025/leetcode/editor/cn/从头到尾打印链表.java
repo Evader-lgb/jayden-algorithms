@@ -1,4 +1,4 @@
-package 京东热门算法;
+package hot100_2025.leetcode.editor.cn;
 
 import java.util.Stack;
 

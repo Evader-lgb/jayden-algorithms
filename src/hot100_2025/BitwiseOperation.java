@@ -1,4 +1,4 @@
-package 左神入门;
+package hot100_2025;
 
 public class BitwiseOperation {
     public static void main(String[] args) {
