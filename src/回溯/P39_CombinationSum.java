@@ -44,7 +44,7 @@
 // Related Topics 数组 回溯 👍 3107 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 回溯;
 
 import java.util.ArrayList;
 import java.util.Arrays;

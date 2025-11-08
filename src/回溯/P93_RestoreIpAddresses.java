@@ -43,7 +43,7 @@
 // Related Topics 字符串 回溯 👍 1547 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 回溯;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +53,8 @@ import java.util.List;
  * @author Jayden
  * @date 2025-10-27 19:51:53
  */
-public class P93_RestoreIpAddresses{
+public class
+P93_RestoreIpAddresses{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P93_RestoreIpAddresses().new Solution();
