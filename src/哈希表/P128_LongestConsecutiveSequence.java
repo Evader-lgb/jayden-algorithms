@@ -37,7 +37,7 @@
 // Related Topics 并查集 数组 哈希表 👍 2665 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 哈希表;
 
 import java.util.HashSet;
 import java.util.Set;

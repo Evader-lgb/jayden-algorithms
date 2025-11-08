@@ -35,7 +35,7 @@
 // Related Topics 贪心 哈希表 双指针 字符串 👍 1347 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 哈希表;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -53,7 +53,7 @@
 // Related Topics 哈希表 字符串 滑动窗口 👍 3421 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package 哈希表;
 
 import java.util.HashMap;
 import java.util.Map;

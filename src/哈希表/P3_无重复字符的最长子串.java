@@ -1,4 +1,4 @@
-package hot100_2025.leetcode.editor.cn;
+package 哈希表;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 给定一个字符串 s ，请你找出其中不含有重复字符的最长子串的长度。
  */
-public class 无重复字符的最长子串 {
+public class P3_无重复字符的最长子串 {
 
     public static void main(String[] args) {
         String str = "hfuaibvauwqb";

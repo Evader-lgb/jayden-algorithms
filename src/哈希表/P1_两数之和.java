@@ -1,4 +1,4 @@
-package hot100_2025.leetcode.editor.cn;
+package 哈希表;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * 你可以按任意顺序返回答案。
  */
-public class 两数之和 {
+public class P1_两数之和 {
     public static void main(String[] args) {
 
     }
