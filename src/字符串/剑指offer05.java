@@ -1,4 +1,4 @@
-package hot100_2025.leetcode.editor.cn;
+package 字符串;
 
 /**
  * 题目链接：https://www.yuque.com/touguo/vfeoy3/afffr0

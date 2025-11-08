@@ -40,7 +40,7 @@
 // Related Topics 深度优先搜索 广度优先搜索 图 拓扑排序 👍 2248 👎 0
 
 
-package hot100_2025.leetcode.editor.cn;
+package DFS_BFS;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

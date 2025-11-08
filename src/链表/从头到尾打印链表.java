@@ -1,4 +1,4 @@
-package hot100_2025.leetcode.editor.cn;
+package 链表;
 
 import java.util.Stack;
 
