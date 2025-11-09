@@ -55,7 +55,7 @@
 // Related Topics 树 深度优先搜索 广度优先搜索 二叉树 👍 1253 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

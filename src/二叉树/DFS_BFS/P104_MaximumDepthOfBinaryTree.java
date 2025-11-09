@@ -34,7 +34,7 @@
 // Related Topics 树 深度优先搜索 广度优先搜索 二叉树 👍 2022 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 /**
  * 二叉树的最大深度

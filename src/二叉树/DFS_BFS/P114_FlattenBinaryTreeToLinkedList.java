@@ -44,7 +44,7 @@
 // Related Topics 栈 树 深度优先搜索 链表 二叉树 👍 1909 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 /**
  * 二叉树展开为链表

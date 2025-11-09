@@ -34,7 +34,7 @@
 // Related Topics 树 深度优先搜索 动态规划 二叉树 👍 2481 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 /**
  * 二叉树中的最大路径和

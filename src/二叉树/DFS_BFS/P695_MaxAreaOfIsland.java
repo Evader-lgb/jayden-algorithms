@@ -40,7 +40,7 @@
 // Related Topics 深度优先搜索 广度优先搜索 并查集 数组 矩阵 👍 1167 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 /**
  * 岛屿的最大面积

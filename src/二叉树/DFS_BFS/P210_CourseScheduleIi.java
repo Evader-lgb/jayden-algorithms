@@ -47,7 +47,7 @@
 // Related Topics 深度优先搜索 广度优先搜索 图 拓扑排序 👍 1062 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

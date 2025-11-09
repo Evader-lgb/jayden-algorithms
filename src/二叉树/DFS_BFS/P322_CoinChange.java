@@ -39,7 +39,7 @@
 // Related Topics 广度优先搜索 数组 动态规划 👍 3145 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 import java.util.Arrays;
 

@@ -44,7 +44,7 @@
 // Related Topics 深度优先搜索 广度优先搜索 并查集 数组 矩阵 👍 2857 👎 0
 
 
-package DFS_BFS;
+package 二叉树.DFS_BFS;
 
 /**
  * 岛屿数量
