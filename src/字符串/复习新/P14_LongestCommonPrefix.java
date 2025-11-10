@@ -52,6 +52,13 @@ public class P14_LongestCommonPrefix{
 //力扣代码
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+
+    /**
+     * TODO 这道题看题解了
+     *
+     * @param strs
+     * @return
+     */
     public String longestCommonPrefix(String[] strs) {
         if(strs == null || strs.length == 0){
             return "";
