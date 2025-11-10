@@ -61,15 +61,16 @@ class Solution {
         for (int i = 1; i < strs.length; i++) {
             int j=0;
             for(; j<ans.length()&&j<strs[i].length();j++){
+                // TODO：这里j写成了i，导致错误
                 if (ans.charAt(j) != strs[i].charAt(j)){
                     // 只要有一个不一样就可以退出循环了
                     break;
                 }
             }
 
-            // 每次22比较的结果
+            // TODO错题：这里最早写到了内层循环了，打断点发现的
+            // 每次比较的结果
             ans = ans.substring(0,j);
-
             if (ans.equals("")){
                 return ans;
             }
