@@ -9,7 +9,7 @@ import java.util.Map;
 public class P3_无重复字符的最长子串 {
 
     public static void main(String[] args) {
-        String str = "hfuaibvauwqb";
+        String str = "pwwkew";
         lengthOfLongestSubstring(str);
     }
 
