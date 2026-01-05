@@ -40,6 +40,8 @@ public class P5_LongestPalindromicSubstring{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P5_LongestPalindromicSubstring().new Solution();
+          // 53、5、121、300、72、42、1143、70、322、64、152、516
+         // 46、93、22、79、37
 	 }
 	 
 //力扣代码
