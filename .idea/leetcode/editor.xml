@@ -795,6 +795,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P77_Combinations .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/doc/content/P77_Combinations .md" />
+              <option name="frontendQuestionId" value="leetcode.cn77" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P77_Combinations .java" />
+              <option name="titleSlug" value="combinations" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P79_WordSearch .java">
           <value>
             <LeetcodeEditor>
