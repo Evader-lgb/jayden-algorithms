@@ -95,6 +95,7 @@ class Solution {
         if (k <= big.size()){
             return quickSelect(big,k);
         } else if (list.size() - small.size() < k) {
+            // 这里相当减去大于跟等于的，就是小于里的第k个最大的元素
             return quickSelect(small,k - (big.size() + equal.size()));
         }
 
