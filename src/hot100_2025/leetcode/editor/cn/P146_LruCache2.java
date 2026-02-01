@@ -110,6 +110,17 @@ static class LRUCache {
         tail.prev = head;
     }
 
+    /**
+     * 添加到头部:将节点放到head下面
+     */
+    public void addToHead(Node node){
+        node.prev = head;
+        node.next = head.next;
+        // TODO 这里有严格顺序哦
+        head.next.prev = node;
+        head.next = node;
+    }
+
     public int get(int key) {
         // 先从缓存里获取数据
         Node node = cache.get(key);
@@ -144,17 +155,6 @@ static class LRUCache {
     public void removeNode(Node node){
         node.prev.next = node.next;
         node.next.prev = node.prev;
-    }
-
-    /**
-     * 添加到头部:将节点放到head下面
-     */
-    public void addToHead(Node node){
-        node.prev = head;
-        node.next = head.next;
-        // TODO 这里有严格顺序哦
-        head.next.prev = node;
-        head.next = node;
     }
 
     /**
