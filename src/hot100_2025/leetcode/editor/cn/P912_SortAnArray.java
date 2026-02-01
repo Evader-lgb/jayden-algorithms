@@ -59,6 +59,7 @@ class Solution {
     }
 
     public void quickSort(int[] nums,int left,int right){
+        // 这里是递归的出口，如果只有一个数的时候，会相等。应该不会有大于的情况
         if (left >= right){
             return;
         }
