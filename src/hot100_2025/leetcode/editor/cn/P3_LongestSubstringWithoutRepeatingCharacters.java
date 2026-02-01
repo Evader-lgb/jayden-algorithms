@@ -52,7 +52,7 @@ import java.util.Map;
 public class P3_LongestSubstringWithoutRepeatingCharacters{
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new P3_LongestSubstringWithoutRepeatingCharacters2().new Solution();
+	 	 Solution solution = new P3_LongestSubstringWithoutRepeatingCharacters().new Solution();
           String test = "abba";
           solution.lengthOfLongestSubstring(test);
 	 }
