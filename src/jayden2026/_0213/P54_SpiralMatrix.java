@@ -45,6 +45,9 @@ public class P54_SpiralMatrix{
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new P54_SpiralMatrix().new Solution();
+          // [[1,2,3],[4,5,6],[7,8,9]]
+          int[][] matrix = new int[][]{{1,2,3},{4,5,6},{7,8,9}};
+          System.out.println(solution.spiralOrder(matrix));
 	 }
 	 
 //力扣代码
@@ -66,11 +69,6 @@ class Solution {
         int button = matrix.length - 1;
 
         // 处理二维数组，按照
-        // 从左到右
-        // 从上到下
-        // 从右到左
-        // 从下到上
-        // 来遍历，注意重合的时候需要终止循环
 //        while (true){
         while (top<=button&&left<=right ){
             // 从左到右处理
