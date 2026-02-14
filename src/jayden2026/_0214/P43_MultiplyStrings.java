@@ -42,7 +42,8 @@ public class P43_MultiplyStrings{
 	 	 Solution solution = new P43_MultiplyStrings().new Solution();
           String num1 = "123";
           String num2 = "456";
-         System.out.println(solution.multiply(num1, num2));
+//         System.out.println(solution.multiply(num1, num2));
+         System.out.println(solution.multiply2(num1, num2));
      }
 	 
 //力扣代码
@@ -81,6 +82,55 @@ class Solution {
             // 每次增加应该乘的倍数
             res = currSum * k + res;
             k*=10;
+        }
+
+        return res.toString();
+    }
+
+    public String multiply2(String num1, String num2) {
+        // 边界判断
+        if (num1.isBlank() || num2.isBlank() || num1.equals("0") || num2.equals("0")){
+            return "0";
+        }
+
+        // 初始化数组暂存结果
+        int m = num1.length() - 1;
+        int n = num2.length() - 1;
+        int[] resultArray = new int[num1.length() + num2.length()];
+
+        // 模拟乘法
+        char[] charArray1 = num1.toCharArray();
+        char[] charArray2 = num2.toCharArray();
+        for (int i = m; i >= 0; i--) {
+            // 当前计算的结果
+            int iNum = charArray1[i] - '0';
+            for (int j = n; j >= 0; j--) {
+                int jNum = charArray2[j] - '0';
+
+                int product = iNum * jNum;
+
+                // 获取当前位跟进位
+                int pos1 = i + j;
+                int pos2 = i + j + 1;
+
+                // 计算结果
+                int sum = product + resultArray[pos2];
+
+                resultArray[pos2] = sum % 10;
+                resultArray[pos1] += sum / 10;
+            }
+        }
+
+        // 处理前面的0
+        int start = 0;
+        while (start <= resultArray.length && resultArray[start] == 0){
+            start++;
+        }
+
+        // 结果处理成字符串
+        StringBuilder res = new StringBuilder();
+        for (int i = start; i < resultArray.length; i++) {
+            res.append(resultArray[i]);
         }
 
         return res.toString();
