@@ -344,6 +344,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P21_MergeTwoSortedLists .java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/doc/content/P21_MergeTwoSortedLists .md" />
+              <option name="frontendQuestionId" value="leetcode.cn21" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P21_MergeTwoSortedLists .java" />
+              <option name="titleSlug" value="merge-two-sorted-lists" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/hot100_2025/leetcode/editor/cn/P22_GenerateParentheses .java">
           <value>
             <LeetcodeEditor>
