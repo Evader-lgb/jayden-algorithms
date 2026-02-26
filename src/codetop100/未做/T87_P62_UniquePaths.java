@@ -49,7 +49,7 @@
 // Related Topics 数学 动态规划 组合数学 👍 2323 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
  * 不同路径

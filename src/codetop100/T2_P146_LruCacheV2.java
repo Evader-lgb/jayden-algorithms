@@ -61,6 +61,8 @@
 
 package codetop100;
 
+import java.util.HashMap;
+
 /**
  * LRU 缓存
  * TODO 这里有两种解法，一种是使用Java自带的LinkedHashMap，另一种是自己实现双向链表+哈希表。另一种写法第一次没有做
@@ -68,26 +70,118 @@ package codetop100;
  * @date 2025-10-12 12:48:03
  */
 public class T2_P146_LruCacheV2 {
-	 public static void main(String[] args) {
-	 	 //测试代码
-	 }
-	 
-//力扣代码
-//leetcode submit region begin(Prohibit modification and deletion)
-class LRUCache {
+        public static void main(String[] args) {
+            //测试代码
+            T2_P146_LruCacheV2.LRUCache cache = new T2_P146_LruCacheV2.LRUCache(2);
+            // 模拟["LRUCache","put","put","get","put","get","put","get","get","get"]
+            // [[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]操作
+            cache.put(1, 1);
+            cache.put(2, 2);
+            System.out.println(cache.get(1));
+            cache.put(3, 3);
+            // 这里预期是-1
+            System.out.println(cache.get(2));
+            cache.put(4, 4);
+            System.out.println(cache.get(1));
+            System.out.println(cache.get(3));
+            System.out.println(cache.get(4));
+        }
 
-    public LRUCache(int capacity) {
-        
-    }
-    
-    public int get(int key) {
-        return 0;
-    }
-    
-    public void put(int key, int value) {
-        
-    }
-}
+        //力扣代码
+//leetcode submit region begin(Prohibit modification and deletion)
+        static class LRUCache {
+
+            HashMap<Integer, LRUCache.Node> cache = new HashMap<>();
+
+            // 代表现在缓存里的元素数量
+            Integer maxLen;
+            Integer capacity;
+            LRUCache.Node head;
+            LRUCache.Node tail;
+
+            public LRUCache(int capacity) {
+                maxLen = 0;
+                this.capacity = capacity;
+                head = new LRUCache.Node();
+                tail = new LRUCache.Node();
+                head.next = tail;
+                tail.prev = head;
+            }
+
+            public int get(int key) {
+                LRUCache.Node node = cache.get(key);
+                if (node == null){
+                    return -1;
+                }
+                // 将元素移到链表的头部：需要做两件事，把元素当前位置删除，在头部添加该元素
+                moveToHead(node);
+                return node.value;
+            }
+
+            public void put(int key, int value) {
+                LRUCache.Node node = cache.get(key);
+                // 如果不存在创建新节点
+                if(node == null){
+                    LRUCache.Node newNode = new LRUCache.Node(key, value);
+                    cache.put(key,newNode);
+                    // TODO 这里最开始忘记写了
+                    addToHead(newNode);
+                    maxLen++;
+                    if (maxLen > capacity){
+                        LRUCache.Node tailNode = removeTail();
+                        cache.remove(tailNode.key);
+                        maxLen--;
+                    }
+                }
+                // 如果存在更新下值，并且添加到头部
+                else{
+                    node.value = value;
+                    moveToHead(node);
+                }
+
+            }
+
+            /**
+             *
+             * @param node
+             */
+            public void moveToHead(LRUCache.Node node){
+                removeNode(node);
+                addToHead(node);
+            }
+
+            public void removeNode(LRUCache.Node node){
+                node.prev.next = node.next;
+                node.next.prev = node.prev;
+            }
+
+            public void addToHead(LRUCache.Node node){
+                node.next = head.next;
+                node.prev = head;
+                head.next.prev = node;
+                head.next = node;
+            }
+
+            public LRUCache.Node removeTail(){
+                LRUCache.Node removeNode = tail.prev;
+                removeNode(removeNode);
+                return removeNode;
+            }
+
+            static class Node {
+                int key;
+                int value;
+                LRUCache.Node prev;
+                LRUCache.Node next;
+
+                public Node(){}
+
+                public Node(int key,int value){
+                    this.key = key;
+                    this.value = value;
+                }
+            }
+        }
 
 /**
  * Your LRUCache object will be instantiated and called as such:
@@ -97,4 +191,4 @@ class LRUCache {
  */
 //leetcode submit region end(Prohibit modification and deletion)
 
-}
+    }

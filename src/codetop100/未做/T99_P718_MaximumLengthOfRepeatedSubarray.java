@@ -29,7 +29,7 @@
 // Related Topics 数组 二分查找 动态规划 滑动窗口 哈希函数 滚动哈希 👍 1225 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
  * 最长重复子数组

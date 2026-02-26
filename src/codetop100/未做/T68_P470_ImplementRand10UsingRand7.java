@@ -50,7 +50,7 @@
 // Related Topics 数学 拒绝采样 概率与统计 随机化 👍 516 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
  * 用 Rand7() 实现 Rand10()

@@ -1,28 +1,26 @@
-//给你一个二叉树的根节点 root ，判断其是否是一个有效的二叉搜索树。 
-//
-// 有效 二叉搜索树定义如下： 
-//
-// 
-// 节点的左子树只包含 严格小于 当前节点的数。 
-// 节点的右子树只包含 严格大于 当前节点的数。 
-// 所有左子树和右子树自身必须也是二叉搜索树。 
-// 
+//给定一个二叉树，判断它是否是 平衡二叉树 
 //
 // 
 //
 // 示例 1： 
 // 
 // 
-//输入：root = [2,1,3]
+//输入：root = [3,9,20,null,null,15,7]
 //输出：true
 // 
 //
 // 示例 2： 
 // 
 // 
-//输入：root = [5,1,4,null,null,3,6]
+//输入：root = [1,2,2,3,3,null,null,4,4]
 //输出：false
-//解释：根节点的值是 5 ，但是右子节点的值是 4 。
+// 
+//
+// 示例 3： 
+//
+// 
+//输入：root = []
+//输出：true
 // 
 //
 // 
@@ -30,24 +28,24 @@
 // 提示： 
 //
 // 
-// 树中节点数目范围在[1, 10⁴] 内 
-// -2³¹ <= Node.val <= 2³¹ - 1 
+// 树中的节点数在范围 [0, 5000] 内 
+// -10⁴ <= Node.val <= 10⁴ 
 // 
 //
-// Related Topics 树 深度优先搜索 二叉搜索树 二叉树 👍 2719 👎 0
+// Related Topics 树 深度优先搜索 二叉树 👍 1688 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
- * 验证二叉搜索树
+ * 平衡二叉树
  * @author Jayden
- * @date 2026-02-26 17:50:38
+ * @date 2026-02-26 17:20:53
  */
-public class T78_P98_ValidateBinarySearchTree {
+public class T72_P110_BalancedBinaryTree {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T78_P98_ValidateBinarySearchTree().new Solution();
+	 	 Solution solution = new T72_P110_BalancedBinaryTree().new Solution();
 	 }
 
 //力扣代码
@@ -68,7 +66,7 @@ public class T78_P98_ValidateBinarySearchTree {
  * }
  */
 class Solution {
-    public boolean isValidBST(TreeNode root) {
+    public boolean isBalanced(TreeNode root) {
         return true;
     }
 
@@ -85,7 +83,6 @@ class Solution {
         }
     }
 }
-
 //leetcode submit region end(Prohibit modification and deletion)
 
 }

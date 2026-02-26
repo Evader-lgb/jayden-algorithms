@@ -46,7 +46,7 @@
 // Related Topics 栈 设计 👍 2030 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
  * 最小栈

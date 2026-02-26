@@ -36,7 +36,7 @@
 // Related Topics 数组 哈希表 👍 2514 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
  * 缺失的第一个正数

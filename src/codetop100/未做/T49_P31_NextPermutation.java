@@ -52,7 +52,7 @@
 // Related Topics 数组 双指针 👍 2764 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
  * 下一个排列

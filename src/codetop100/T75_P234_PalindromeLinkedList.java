@@ -34,6 +34,7 @@
 
 package codetop100;
 
+
 /**
  * 回文链表
  * @author Jayden
@@ -58,16 +59,52 @@ public class T75_P234_PalindromeLinkedList {
  * }
  */
 class Solution {
-    public boolean isPalindrome(ListNode head) {
-        return false;
+    public boolean isPalindrome(Solution.ListNode head) {
+        if (head == null || head.next == null) {
+            return true;
+        }
+
+        Solution.ListNode slow = head;
+        Solution.ListNode fast = head;
+        while (fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        Solution.ListNode reverse = reverseList(slow);
+
+        Solution.ListNode first = head;
+        Solution.ListNode second = reverse;
+        while (second!=null){
+            if (second.val != first.val){
+                return false;
+            }
+            first = first.next;
+            second = second.next;
+        }
+
+        return true;
+    }
+
+    public Solution.ListNode reverseList(Solution.ListNode node){
+        Solution.ListNode prev = null;
+        Solution.ListNode current = node;
+
+        while (current!=null){
+            Solution.ListNode temp = current.next;
+            current.next =  prev;
+            prev = current;
+            current = temp;
+        }
+        return prev;
     }
 
     class ListNode {
         int val;
-        ListNode next;
+        Solution.ListNode next;
         ListNode() {}
         ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+        ListNode(int val, Solution.ListNode next) { this.val = val; this.next = next; }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

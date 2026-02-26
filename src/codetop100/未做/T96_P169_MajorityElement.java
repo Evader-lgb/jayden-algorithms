@@ -34,7 +34,7 @@
 // Related Topics 数组 哈希表 分治 计数 排序 👍 2643 👎 0
 
 
-package codetop100;
+package codetop100.未做;
 
 /**
  * 多数元素
