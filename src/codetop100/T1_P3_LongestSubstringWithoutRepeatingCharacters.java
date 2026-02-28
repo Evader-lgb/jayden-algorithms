@@ -45,7 +45,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 难度：中等
  * 无重复字符的最长子串
+ *
+ * <href a="https://leetcode.cn/problems/longest-substring-without-repeating-characters/submissions/695665498/"  />
+ * 解题思路：
+ * 1. 双指针用于移动窗口，左右指针都从0开始移动
+ * 2. 哈希表用于记录字符出现的位置，用于判断是否重复
+ *
+ *
  * @author Jayden
  * @date 2026-02-16 08:07:08
  */
