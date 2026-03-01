@@ -100,6 +100,22 @@ class Solution {
         // 返回全局最大子数组和
         return maxSum;
     }
+
+    public int maxSubArray2(int[] nums) {
+        if(nums == null){
+            return 0;
+        }
+
+        int[] dp = new int[nums.length];
+        dp[0] = nums[0];
+        int max = nums[0];
+
+        for(int i = 1;i<nums.length;i++){
+            dp[i] = Math.max(nums[i],nums[i] + dp[i-1]);
+            max = Math.max(dp[i],max);
+        }
+        return max;
+    }
 }
 
 }
