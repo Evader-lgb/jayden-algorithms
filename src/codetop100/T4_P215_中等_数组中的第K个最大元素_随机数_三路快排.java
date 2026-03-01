@@ -102,6 +102,42 @@ class Solution {
         // 返回基准值
         return rondom;
     }
+
+    public int quickSelect2(List<Integer> list,int k){
+        // 设置一个随机数用于快速排序
+        Random rondom = new Random();
+        Integer quict = rondom.nextInt(list.size());
+
+        // 设置3路快排的集合
+        List<Integer> big = new ArrayList<>();
+        List<Integer> equal = new ArrayList<>();
+        List<Integer> small = new ArrayList<>();
+
+        // 遍历排序列表，处理数据
+        for(Integer num:list){
+            if(num > quict){
+                big.add(num);
+            }else if(num < quict){
+                small.add(num);
+            }else{
+                equal.add(num);
+            }
+        }
+
+        // 处理k在大于的情况:big的数量大于k，说明在这里
+        if(big.size() >= k){
+            // 此时还是k个最大
+            return quickSelect(big,k);
+        }
+
+        // 处理k在小于的情况：
+        if(k > big.size() + equal.size()){
+            return quickSelect(small,k - (big.size() + equal.size()));
+        }
+
+        // 如果不在大于不在小于里，那就是在等于里，直接返回就是了
+        return quict;
+    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
