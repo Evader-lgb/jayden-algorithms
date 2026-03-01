@@ -46,14 +46,19 @@
 package codetop100;
 
 /**
+ * 难度：简单
  * 反转链表
+ * https://leetcode.cn/problems/reverse-linked-list/
+ *
+ * 思路：先反转（对应2行代码）、再初始化下一轮节点（prev跟curr）
+ *
  * @author Jayden
  * @date 2026-02-15 19:57:38
  */
-public class T3_P206_ReverseLinkedList {
+public class T3_P206_简单_反转链表_先反转_再下一轮 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T3_P206_ReverseLinkedList().new Solution();
+	 	 Solution solution = new T3_P206_简单_反转链表_先反转_再下一轮().new Solution();
 	 }
 	 
 //力扣代码

@@ -38,14 +38,22 @@ import java.util.List;
 import java.util.Random;
 
 /**
+ * 难度：中等
  * 数组中的第K个最大元素
+ * https://leetcode.cn/problems/kth-largest-element-in-an-array/
+ *
+ * 核心思路：随机数+三路快排
+ * 解题思路：
+ * 1.随机数分成3个列表，分别保存比pivot小的，等于pivot的，比pivot大的元素
+ * 2.处理大于数的元素，处理小于的元素，处理等于的元素
+ *
  * @author Jayden
  * @date 2025-10-12 12:51:47
  */
-public class T4_P215_KthLargestElementInAnArray {
+public class T4_P215_中等_数组中的第K个最大元素_随机数_三路快排 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T4_P215_KthLargestElementInAnArray().new Solution();
+	 	 Solution solution = new T4_P215_中等_数组中的第K个最大元素_随机数_三路快排().new Solution();
 	 }
 	 
 //力扣代码

@@ -32,14 +32,17 @@
 package codetop100;
 
 /**
+ * 难度：中等
  * 最长回文子串
+ * https://leetcode.cn/problems/longest-palindromic-substring/description/
+ *
  * @author Jayden
  * @date 2025-10-14 20:03:13
  */
-public class T9_P5_LongestPalindromicSubstring {
+public class T9_P5_中等_最长回文子串_动态规划 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T9_P5_LongestPalindromicSubstring().new Solution();
+	 	 Solution solution = new T9_P5_中等_最长回文子串_动态规划().new Solution();
           // 53、5、121、300、72、42、1143、70、322、64、152、516
          // 46、93、22、79、37
 

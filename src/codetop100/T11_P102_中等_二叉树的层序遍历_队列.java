@@ -43,14 +43,17 @@ import java.util.List;
 import java.util.Queue;
 
 /**
+ * 难度：中等
  * 二叉树的层序遍历
+ * https://leetcode.cn/problems/binary-tree-level-order-traversal/description/
+ *
  * @author Jayden
  * @date 2025-10-16 18:16:55
  */
-public class T11_P102_BinaryTreeLevelOrderTraversal {
+public class T11_P102_中等_二叉树的层序遍历_队列 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T11_P102_BinaryTreeLevelOrderTraversal().new Solution();
+	 	 Solution solution = new T11_P102_中等_二叉树的层序遍历_队列().new Solution();
 	 }
 	 
 //力扣代码

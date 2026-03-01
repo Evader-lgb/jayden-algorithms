@@ -42,14 +42,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 难度：中等
  * 全排列
+ * https://leetcode.cn/problems/permutations/description/
+ *
+ * 思路：回溯
+ *
  * @author Jayden
  * @date 2025-10-15 10:56:50
  */
-public class T15_P46_Permutations {
+public class T15_P46_中等_全排列_回溯 {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new T15_P46_Permutations().new Solution();
+        Solution solution = new T15_P46_中等_全排列_回溯().new Solution();
     }
 
     //力扣代码

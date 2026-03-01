@@ -45,14 +45,19 @@
 package codetop100;
 
 /**
+ * 难度：中等
  * 最大子数组和
+ * https://leetcode.cn/problems/maximum-subarray/description/
+ *
+ * 思路：动态规划
+ * 1.不要把dp直接设置成答案，dp是当前节点的最大值，然后通过每轮对比得到最大值
  * @author Jayden
  * @date 2025-10-15 09:44:41
  */
-public class T7_P53_MaximumSubarray {
+public class T7_P53_中等_最大子数组和_动态规划 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T7_P53_MaximumSubarray().new Solution();
+	 	 Solution solution = new T7_P53_中等_最大子数组和_动态规划().new Solution();
           int[] nums = new int[]{-2,1,-3,4,-1,2,1,-5,4};
           solution.maxSubArray(nums);
 	 }
@@ -67,33 +72,33 @@ class Solution {
      *
      * 子数组是数组中的一个连续部分。
      *
-     *
-     * 考察的应该是双指针，有一个变量存当前的最大值即可
-     * // TODO：思路就错了，实际解法用的是动态规划。Kadane算法是解决最大子数组的算法，卡内基梅隆大学教授提出的一种算法思想
-     * // Kadane算法不仅是解决最大子数组和问题的最优算法，更是动态规划空间优化的经典范例。它体现了算法设计中"用时间换空间"的思想
-     * ，通过巧妙的变量设计，在保持O(n)时间复杂度的同时，将空间复杂度从O(n)降低到O(1)。
-     *
      * @param nums
      * @return
      */
     public int maxSubArray(int[] nums) {
-        int ans = nums[0];
-        int sum = 0;
-        for (int num : nums) {
-            // TODO:这里其实是不理解的，随便写了个num>0
-            // TODO：这是Kadane算法的状态转移方程实现：
-            //
-            //当sum > 0时：继续累加当前元素，因为正数加上新元素可能会变得更大
-            //
-            //当sum <= 0时：从当前元素重新开始，因为负数/零加上当前元素不会比当前元素本身更大
-            if (sum > 0){
-                sum += num;
-            }else {
-                sum = num;
-            }
-            ans = Math.max(ans,sum);
+        // 边界情况处理：如果数组为空，返回0
+        if(nums == null || nums.length == 0){
+            return 0;
         }
-        return ans;
+
+        // 初始化当前子数组和 和 全局最大和
+        // 从第一个元素开始，避免空子数组的情况
+        int currSum = nums[0];
+        int maxSum = nums[0];
+
+        // 从第二个元素开始遍历数据
+        for (int i = 1; i < nums.length; i++) {
+            // 步骤1:更新当前子数组和
+            // 选择：要么将当前元素加入之前子数组，要么从当前元素重新开始
+            currSum = Math.max(nums[i],currSum + nums[i]);
+
+            // 步骤2:更新全局最大和
+            // 比较当前子数组和与已知的最大全局和，取较大值
+            maxSum = Math.max(maxSum,currSum);
+        }
+
+        // 返回全局最大子数组和
+        return maxSum;
     }
 }
 

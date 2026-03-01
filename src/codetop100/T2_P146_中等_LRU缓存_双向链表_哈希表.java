@@ -64,15 +64,22 @@ package codetop100;
 import java.util.HashMap;
 
 /**
+ * 难度：中等
  * LRU 缓存
- * TODO 这里有两种解法，一种是使用Java自带的LinkedHashMap，另一种是自己实现双向链表+哈希表。另一种写法第一次没有做
+ * https://leetcode.cn/problems/lru-cache/description/
+ *
+ * 数据结构：双向链表 + 哈希表
+ * 解题思路：
+ * 1.双向链表是核心， 链表节点包含数据，以及前后指针，写入跟查询都需要移动/添加到链表头部
+ * 2.哈希表存储数据O(1)
+ *
  * @author Jayden
  * @date 2025-10-12 12:48:03
  */
-public class T2_P146_LruCacheV2 {
+public class T2_P146_中等_LRU缓存_双向链表_哈希表 {
         public static void main(String[] args) {
             //测试代码
-            T2_P146_LruCacheV2.LRUCache cache = new T2_P146_LruCacheV2.LRUCache(2);
+            T2_P146_中等_LRU缓存_双向链表_哈希表.LRUCache cache = new T2_P146_中等_LRU缓存_双向链表_哈希表.LRUCache(2);
             // 模拟["LRUCache","put","put","get","put","get","put","get","get","get"]
             // [[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]操作
             cache.put(1, 1);

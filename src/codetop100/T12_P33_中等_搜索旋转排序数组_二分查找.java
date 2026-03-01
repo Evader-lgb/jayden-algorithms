@@ -48,14 +48,17 @@
 package codetop100;
 
 /**
+ * 难度：中等
  * 搜索旋转排序数组
+ * https://leetcode.cn/problems/search-in-rotated-sorted-array/description/
+ *
  * @author Jayden
  * @date 2026-02-26 10:25:43
  */
-public class T12_P33_SearchInRotatedSortedArray {
+public class T12_P33_中等_搜索旋转排序数组_二分查找 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T12_P33_SearchInRotatedSortedArray().new Solution();
+	 	 Solution solution = new T12_P33_中等_搜索旋转排序数组_二分查找().new Solution();
           int[] nums = new int[]{5,1,3};
          System.out.println(solution.search(nums, 3));
      }

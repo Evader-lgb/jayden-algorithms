@@ -43,14 +43,17 @@ import java.util.List;
 import java.util.Queue;
 
 /**
+ * 难度：中等
  * 二叉树的锯齿形层序遍历
+ *
+ * https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/description/
  * @author Jayden
  * @date 2025-10-27 08:39:27
  */
-public class T19_P103_BinaryTreeZigzagLevelOrderTraversal {
+public class T19_P103_中等_二叉树的锯齿形层序遍历_BFS {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T19_P103_BinaryTreeZigzagLevelOrderTraversal().new Solution();
+	 	 Solution solution = new T19_P103_中等_二叉树的锯齿形层序遍历_BFS().new Solution();
 	 }
 	 
 //力扣代码

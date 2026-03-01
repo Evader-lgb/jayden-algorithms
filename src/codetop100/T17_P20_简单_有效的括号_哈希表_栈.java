@@ -6,7 +6,14 @@ import java.util.Map;
 import java.util.Stack;
 
 /**
+ * 难度：简单
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串 s ，判断字符串是否有效。
+ * https://leetcode.cn/problems/valid-parentheses/description/
+ *
+ * 数据机构：栈 + 哈希表
+ * 解题思路：
+ * 1. 哈希表初始化对称的串
+ * 2. 使用栈来入队、出队，用哈希表匹配
  *
  * 有效字符串需满足：
  *
@@ -17,7 +24,7 @@ import java.util.Stack;
  * <p>
  * <a href="https://leetcode.cn/problems/valid-parentheses/description/">链接</a>
  */
-public class T17_P20_有效的括号 {
+public class T17_P20_简单_有效的括号_哈希表_栈 {
     public static void main(String[] args) {
         boolean valid = isValid("(){}}{");
         System.out.println(valid);

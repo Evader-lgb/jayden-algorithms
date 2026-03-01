@@ -1,10 +1,13 @@
 package codetop100;
 
 /**
+ * 难度：简单
+ * 合并2个有序链表
+ * https://leetcode.cn/problems/merge-two-sorted-lists/description/
  * 思路
  *
  */
-public class T10_P21_合并2个有序链表 {
+public class T10_P21_简单_合并2个有序链表 {
 
     public static void main(String[] args) {
         // 模拟list1 =

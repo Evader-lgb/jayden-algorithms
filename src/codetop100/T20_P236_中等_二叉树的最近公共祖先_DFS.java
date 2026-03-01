@@ -46,14 +46,19 @@
 package codetop100;
 
 /**
+ * 难度：中等
  * 二叉树的最近公共祖先
+ * https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/description/
+ *
+ * 数据结构：DFS
+ *
  * @author Jayden
  * @date 2025-10-27 08:07:47
  */
-public class T20_P236_LowestCommonAncestorOfABinaryTree {
+public class T20_P236_中等_二叉树的最近公共祖先_DFS {
     public static void main(String[] args) {
         //测试代码
-        Solution solution = new T20_P236_LowestCommonAncestorOfABinaryTree().new Solution();
+        Solution solution = new T20_P236_中等_二叉树的最近公共祖先_DFS().new Solution();
     }
 
 //力扣代码

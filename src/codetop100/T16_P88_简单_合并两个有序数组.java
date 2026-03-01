@@ -57,14 +57,21 @@
 package codetop100;
 
 /**
+ * 难度：简单
  * 合并两个有序数组
+ * https://leetcode.cn/problems/merge-sorted-array/description/
+ *
+ * 思路：跟合并两个链表一样的思路
+ * 1. 定义两个指针，分别指向nums1和nums2的末尾
+ * 2. 需要注意是从尾部开始遍历，从头部遍历需要新开一个数组，不符合题意
+ *
  * @author Jayden
  * @date 2026-02-13 13:16:28
  */
-public class T16_P88_MergeSortedArray {
+public class T16_P88_简单_合并两个有序数组 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T16_P88_MergeSortedArray().new Solution();
+	 	 Solution solution = new T16_P88_简单_合并两个有序数组().new Solution();
 	 }
 	 
 //力扣代码

@@ -55,14 +55,23 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * 难度：中等
  * 三数之和
+ * https://leetcode.cn/problems/3sum/description/
+ *
+ * 解题思路：
+ * 1. 排序 + 双指针 + 转化为两数之和
+ * 2. 排重在2层循环都需要做
+ * 3. 排序非常的重要
+ *
+ *
  * @author Jayden
  * @date 2026-02-16 11:08:46
  */
-public class T6_P15_ThreeSum {
+public class T6_P15_中等_三数之和_排序_双指针_改为两数之和 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T6_P15_ThreeSum().new Solution();
+	 	 Solution solution = new T6_P15_中等_三数之和_排序_双指针_改为两数之和().new Solution();
           int[] nums = new int[]{-1,0,1,2,-1,-4};
           solution.threeSum(nums);
 	 }

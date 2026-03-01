@@ -38,14 +38,18 @@
 package codetop100;
 
 /**
+ * 难度：中等
  * 排序数组
+ * https://leetcode.cn/problems/sort-an-array/description/
+ *
+ * 思路：三路快速排序（递归+左右指针+随机数）
  * @author Jayden
  * @date 2025-10-16 19:13:42
  */
-public class T8_P912_SortAnArray {
+public class T8_P912_中等_排序数组_三路快排 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T8_P912_SortAnArray().new Solution();
+	 	 Solution solution = new T8_P912_中等_排序数组_三路快排().new Solution();
 	 }
 	 
 //力扣代码

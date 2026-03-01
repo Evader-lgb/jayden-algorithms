@@ -43,17 +43,23 @@
 
 package codetop100;
 
-import 递归.P25_ReverseNodesInKGroup;
 
 /**
+ * 难度：困难
  * K 个一组翻转链表
+ * https://leetcode.cn/problems/reverse-nodes-in-k-group/description/
+ *
+ * 解题思路：
+ * 1. 反转链表的基础上增加了k个节点的翻转，递归实现
+ * 2. K个返回的是prev，反转返回的是curr
+ *
  * @author Jayden
  * @date 2025-10-14 19:46:31
  */
-public class T5_P25_ReverseNodesInKGroup {
+public class T5_P25_困难_K个一组翻转链表_返回的是prev {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T5_P25_ReverseNodesInKGroup().new Solution();
+	 	 Solution solution = new T5_P25_困难_K个一组翻转链表_返回的是prev().new Solution();
 	 }
 	 
 //力扣代码

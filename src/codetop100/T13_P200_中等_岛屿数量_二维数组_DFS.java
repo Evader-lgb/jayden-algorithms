@@ -48,14 +48,22 @@
 package codetop100;
 
 /**
+ * 难度：中等
  * 岛屿数量
+ * https://leetcode.cn/problems/number-of-islands/
+ *
+ * 数据结构：二维数组
+ * 解题思路一句话：
+ * 1. 深度优先搜索
+ * 2. 虽然不是二叉树，但本质是上下左右四个方向匹配
+ *
  * @author Jayden
  * @date 2025-10-19 16:17:03
  */
-public class T13_P200_NumberOfIslands {
+public class T13_P200_中等_岛屿数量_二维数组_DFS {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T13_P200_NumberOfIslands().new Solution();
+	 	 Solution solution = new T13_P200_中等_岛屿数量_二维数组_DFS().new Solution();
 	 }
 	 
 //力扣代码
