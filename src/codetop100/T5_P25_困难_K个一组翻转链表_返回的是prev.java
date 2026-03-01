@@ -51,7 +51,7 @@ package codetop100;
  *
  * 解题思路：
  * 1. 反转链表的基础上增加了k个节点的翻转，递归实现
- * 2. K个返回的是prev，反转返回的是curr
+ * 2. K个返回的是prev，反转返回的是prev
  *
  * @author Jayden
  * @date 2025-10-14 19:46:31
@@ -120,6 +120,38 @@ class Solution {
         head.next = reverseKGroup(curr,k);
 
         // 返回当前组翻转后的新头节点
+        return prev;
+    }
+
+    public ListNode reverseKGroup2(ListNode head, int k) {
+        // 边界处理
+        if(head == null || k==1){
+            return head;
+        }
+
+        // k个一组预先检查
+        ListNode check = head;
+        for(int i=0;i<k;i++){
+            if(check == null){
+                return head;
+            }
+            check = check.next;
+        }
+
+        // 反转链表
+        ListNode prev = null;
+        ListNode curr = head;
+        for(int i=0;i<k;i++){
+            ListNode temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
+        }
+
+        // 链接各个group
+        head.next = reverseKGroup2(curr,k);
+
+        // 返回最终的数据
         return prev;
     }
 
