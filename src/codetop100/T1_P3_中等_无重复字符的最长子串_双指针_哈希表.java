@@ -47,8 +47,10 @@ import java.util.Map;
 /**
  * 难度：中等
  * 无重复字符的最长子串
+ * <p ></p>
  *
- * <href a="https://leetcode.cn/problems/longest-substring-without-repeating-characters/submissions/695665498/"  />
+ * <a href ="https://leetcode.cn/problems/longest-substring-without-repeating-characters/submissions/695665498/" >链接</a>
+ * <p ></p>
  * 解题思路：双指针+哈希表
  * 1. 双指针用于移动窗口，左右指针都从0开始移动
  * 2. 哈希表用于记录字符出现的位置，用于判断是否重复
@@ -61,8 +63,8 @@ public class T1_P3_中等_无重复字符的最长子串_双指针_哈希表 {
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new T1_P3_中等_无重复字符的最长子串_双指针_哈希表().new Solution();
-          String str = " ";
-         System.out.println(solution.lengthOfLongestSubstring(str));
+          String str = "abcabcbb";
+         System.out.println(solution.lengthOfLongestSubstring2(str));
      }
 	 
 //力扣代码
@@ -102,6 +104,51 @@ class Solution {
 
         // 返回结果
         return maxLen;
+    }
+
+    /**
+     * 3月1日
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring2(String s) {
+
+
+        int res = 0;
+        // 边界判断 为空的时候直接返回空字符串
+        if(s.isBlank()){
+            return res;
+        }
+
+        // 初始化双指针，从同一个起点开始
+        int length = s.length();
+        int left = 0;
+        int right = 0;
+
+        // 初始化哈希表，key是字符，value是下标
+        Map<Character,Integer> map = new HashMap<>();
+
+        // 循环处理，right小于字符串长度
+        while(right < length){
+
+            // 左 = 当前左 跟map中的最大值比较
+            if (map.containsKey(s.charAt(right))){
+                left = Math.max(left,map.getOrDefault(s.charAt(right),-1)+1);
+            }
+
+            // 当前最大值 = 右 - 左 + 1
+            int currLen = right - left + 1;
+
+            // 最大值 = 当前指针区间的最大值跟当前最大值比较
+            res = Math.max(res,currLen);
+            // 把字符放到map中
+            map.put(s.charAt(right),right);
+            right++;
+        }
+
+
+        return res;
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
