@@ -73,7 +73,9 @@ public class T6_P15_中等_三数之和_排序_双指针_改为两数之和 {
 	 	 //测试代码
 	 	 Solution solution = new T6_P15_中等_三数之和_排序_双指针_改为两数之和().new Solution();
           int[] nums = new int[]{-1,0,1,2,-1,-4};
-          solution.threeSum(nums);
+//          solution.threeSum(nums);
+         int[] nums2 = new int[]{-100,-70,-60,110,120,130,160};
+          solution.threeSum2(nums2);
 	 }
 	 
 //力扣代码
@@ -132,6 +134,65 @@ class Solution {
 
 
             }
+        }
+
+        // 返回结果
+        return res;
+    }
+
+    /**
+     核心思路：改成2数之和处理
+     每个元素都需要做下去重、两数之和用双指针
+     */
+    public List<List<Integer>> threeSum2(int[] nums) {
+        // 返回结果初始化
+        List<List<Integer>> res = new ArrayList<>();
+        if(nums == null || nums.length < 3){
+            return res;
+        }
+
+        // 对数组进行排序
+        Arrays.sort(nums);
+
+        // 外层遍历
+        for(int i=0;i<nums.length;i++){
+            int num = nums[i];
+            if(num > 0){
+                break;
+            }
+
+            // 外层判重复
+            if(i> 0 && nums[i] == nums[i-1]){
+                continue;
+            }
+
+            // 双指针初始化
+            int left = i + 1;
+            int right = nums.length -1;
+
+            // 内层遍历
+            while(left < right){
+                // 移动左右指针移动求符合条件的组合
+                if(-num == nums[left] + nums[right]){
+                    res.add(Arrays.asList(nums[i],nums[left],nums[right]));
+                    // 内层判重
+                    if(left < right && nums[left] == nums[left+1]){
+                        left++;
+                    }
+                    if(left<right && nums[right] == nums[right-1]){
+                        right--;
+                    }
+
+                    // 左右指针移动
+                    right--;
+                    left++;
+                }else if(-num > nums[left] + nums[right]){
+                    left++;
+                }else {
+                    right--;
+                }
+            }
+
         }
 
         // 返回结果
