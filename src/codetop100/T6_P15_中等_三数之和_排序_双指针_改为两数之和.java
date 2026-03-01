@@ -175,6 +175,8 @@ class Solution {
                 // 移动左右指针移动求符合条件的组合
                 if(-num == nums[left] + nums[right]){
                     res.add(Arrays.asList(nums[i],nums[left],nums[right]));
+
+                    // TODO 下面的这几行代码是要在等于的分支里写的
                     // 内层判重
                     if(left < right && nums[left] == nums[left+1]){
                         left++;
