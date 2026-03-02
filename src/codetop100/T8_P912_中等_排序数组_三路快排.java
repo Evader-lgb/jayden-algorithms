@@ -50,6 +50,8 @@ public class T8_P912_中等_排序数组_三路快排 {
 	 public static void main(String[] args) {
 	 	 //测试代码
 	 	 Solution solution = new T8_P912_中等_排序数组_三路快排().new Solution();
+          int[] nums = new int[]{5,1,1,2,0,0};
+         solution.sortArray2(nums);
 	 }
 	 
 //力扣代码
@@ -111,6 +113,58 @@ class Solution {
     }
 
     private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
+
+    public int[] sortArray2(int[] nums) {
+        // 校验边界
+        if(nums == null || nums.length == 1){
+            return nums;
+        }
+
+        return quickSelect2(nums,0,nums.length -1);
+    }
+
+    public int[] quickSelect2(int[] nums,int left,int right){
+        // 参数校验
+        if(left >= right){
+            return nums;
+        }
+
+        // 初始化边界
+        int lt = left;
+        int gt = right;
+        int i = left;
+
+        // 获取一个基准数下标
+        int randomIndex = left + (int)(Math.random() * (right - left + 1));
+        int pviot = nums[randomIndex];
+        swap2(nums,randomIndex,right);
+
+        while(i <= gt){
+            if(nums[i]>pviot){
+                swap2(nums,i,gt);
+                gt--;
+            }else if(nums[i]<pviot){
+                swap2(nums,i,lt);
+                lt++;
+                i++;
+            }else{
+                i++;
+            }
+        }
+
+        // 处理左右两边
+        quickSelect2(nums,left,lt-1);
+        quickSelect2(nums,gt+1,right);
+
+        return nums;
+    }
+
+    public void swap2(int[] nums,int i,int j){
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
