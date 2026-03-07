@@ -48,14 +48,17 @@
 package codetop100;
 
 /**
+ * 难度：中等
  * 最长递增子序列
+ * https://leetcode.cn/problems/longest-increasing-subsequence/description/
+ *
  * @author Jayden
  * @date 2025-10-16 18:37:38
  */
-public class T23_P300_LongestIncreasingSubsequence {
+public class T23_P300_中等_最长递增子序列 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T23_P300_LongestIncreasingSubsequence().new Solution();
+	 	 Solution solution = new T23_P300_中等_最长递增子序列().new Solution();
 	 }
 	 
 //力扣代码
