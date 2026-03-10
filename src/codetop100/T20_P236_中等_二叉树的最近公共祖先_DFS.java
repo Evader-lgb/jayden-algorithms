@@ -111,6 +111,30 @@ public class T20_P236_中等_二叉树的最近公共祖先_DFS {
                 this.right = right;
             }
         }
+
+        public TreeNode lowestCommonAncestorV2(TreeNode root, TreeNode p, TreeNode q) {
+            // 边界判断
+            if(root == null || root == p || root == q){
+                return root;
+            }
+
+            // 遍历左子树
+            TreeNode left = lowestCommonAncestorV2(root.left,p,q);
+
+            // 遍历右子树
+            TreeNode right = lowestCommonAncestorV2(root.right,p,q);
+
+            // 判断公共祖先
+            if (left != null && right != null){
+                return root;
+            } else if (left != null){
+                return left;
+            }else {
+                return right;
+            }
+        }
+
+
 //leetcode submit region end(Prohibit modification and deletion)
 
     }
