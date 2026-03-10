@@ -21,11 +21,11 @@ public class T18_P121_简单_买卖股票的最佳时机_动态规划 {
         int profit = 0;
         for (int price : prices) {
             // 算出当前最低的价格
-            if (price < cost){
+            if (price < cost) {
                 cost = price;
             }
             // 当当天价格比成本价高的时候要算下利润
-            else if(price - cost > profit){
+            else if (price - cost > profit) {
                 profit = price - cost;
             }
 
@@ -39,11 +39,39 @@ public class T18_P121_简单_买卖股票的最佳时机_动态规划 {
         int maxRes = 0;
 
         for (int i = 1; i < prices.length; i++) {
-            min = Math.min(min,prices[i]);
+            min = Math.min(min, prices[i]);
 
-            maxRes = Math.max(prices[i] - min,maxRes);
+            maxRes = Math.max(prices[i] - min, maxRes);
         }
 
         return maxRes;
+    }
+
+
+
+    public static int maxProfit3(int[] prices) {
+        // 边界判断
+        if ((prices == null || prices.length ==0)){
+            return 0;
+        }
+
+        // 初始化返回值
+        int result = 0;
+
+        // 定义dp的第一个元素，遍历数组处理， dp为当前天数能获取的最大的利润
+       int min = Integer.MAX_VALUE;
+        for (int i = 0; i < prices.length; i++) {
+            min = Math.min(min,prices[i]);
+
+            result = Math.max(result,prices[i]-min);
+        }
+
+        // 返回结果
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] prices = new int[]{7,1,5,3,6,4};
+        System.out.println(maxProfit3(prices));
     }
 }
