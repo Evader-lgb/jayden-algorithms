@@ -127,7 +127,55 @@ class Solution {
             this.right = right;
         }
     }
-}
+
+    public List<List<Integer>> zigzagLevelOrderV2(TreeNode root) {
+        // 初始化返回值
+        List<List<Integer>> res = new ArrayList<>();
+
+        // 边界判断
+        if (root == null){
+            return res;
+        }
+
+        // 初始化层级用于实现锯齿形
+        int level = 0;
+
+        // 初始化队列，用于层序遍历
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        // 遍历的终止条件，队列为空
+        while (!queue.isEmpty()){
+            List<Integer> cureList = new ArrayList<>();
+            int size = queue.size();
+            // 进行单层的遍历
+            for (int i = 0; i < size; i++) {
+                TreeNode poll = queue.poll();
+
+                // 数据放入当前层
+                if (level % 2 == 0){
+                    cureList.add(poll.val);
+                }else {
+                    cureList.add(0,poll.val);
+                }
+
+                if (poll.left != null){
+                    queue.offer(poll.left);
+                }
+
+                if (poll.right != null){
+                    queue.offer(poll.right);
+                }
+            }
+
+            level++;
+            res.add(cureList);
+        }
+
+        // 返回结果
+        return res;
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
+}
 }
