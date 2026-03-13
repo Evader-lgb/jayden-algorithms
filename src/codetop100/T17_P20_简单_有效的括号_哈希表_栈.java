@@ -41,18 +41,18 @@ public class T17_P20_简单_有效的括号_哈希表_栈 {
 
     public static boolean isValid(String s) {
         // 临界值处理
-        if (s == null || s.length()==0){
+        if (s == null || s.length() == 0) {
             return true;
         }
 
         // 哈希表建立左右括号关联
         Map<Character, Character> map = new HashMap<>();
-        map.put('(',')');
-        map.put('{','}');
-        map.put('[',']');
+        map.put('(', ')');
+        map.put('{', '}');
+        map.put('[', ']');
 
         // TODO 少考虑了只有右括号的场景
-        if (!map.containsKey(s.charAt(0))){
+        if (!map.containsKey(s.charAt(0))) {
             return false;
         }
 
@@ -63,13 +63,13 @@ public class T17_P20_简单_有效的括号_哈希表_栈 {
         // 哈希表key含当前字符则进，不含则栈顶跟当前字符比较
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if (map.containsKey(c)){
+            if (map.containsKey(c)) {
                 stack.add(c);
-            }else {
+            } else {
                 Character peek = stack.peek();
-                if ('?' != peek && c == map.get(peek)){
+                if ('?' != peek && c == map.get(peek)) {
                     stack.pop();
-                }else {
+                } else {
                     return false;
                 }
             }
@@ -82,29 +82,67 @@ public class T17_P20_简单_有效的括号_哈希表_栈 {
 
     /**
      * 这个方法主要学习的是addLast和removeLast，写的时候是不知道这2个方法的
+     *
      * @param s
      * @return
      */
     public static boolean isValid2(String s) {
         HashMap<Character, Character> map = new HashMap<>();
-        map.put('(',')');
-        map.put('[',']');
-        map.put('{','}');
+        map.put('(', ')');
+        map.put('[', ']');
+        map.put('{', '}');
 
         char[] charArray = s.toCharArray();
         LinkedList<Character> stack = new LinkedList<>();
         stack.add('?');
-        if (charArray.length == 0 || !map.containsKey(charArray[0])){
+        if (charArray.length == 0 || !map.containsKey(charArray[0])) {
             return false;
         }
         for (Character c : charArray) {
-            if (map.containsKey(c)){
+            if (map.containsKey(c)) {
                 stack.addLast(c);
-            }else if(map.get(stack.removeLast()) != c ){
+            } else if (map.get(stack.removeLast()) != c) {
                 return false;
             }
         }
 
         return stack.size() == 1;
     }
+
+
+    /**
+     * 数据结构：map + 栈
+     * @param s
+     * @return
+     */
+    public static boolean isValid3(String s) {
+        if(s.isBlank()){
+            return true;
+        }
+        // 初始化key-value对
+        Map<Character,Character> map = new HashMap<>();
+        map.put('(',')');
+        map.put('[',']');
+        map.put('{','}');
+
+        // 遍历字符串处理
+        char[] charArray = s.toCharArray();
+        Stack<Character> stack = new Stack<>();
+        for (char c : charArray) {
+            // 判断是否是map中的key，是的话入栈
+            if (map.containsKey(c)){
+                stack.add(c);
+            }else {
+                // 如果不是map中的key，弹一个元素出来看是否等于，不是则返回false
+                Character pop = stack.pop();
+//                if (pop.equals(map.get()))
+            }
+
+
+        }
+
+
+        return true;
+    }
+
 }
