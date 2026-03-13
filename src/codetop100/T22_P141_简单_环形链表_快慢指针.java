@@ -58,13 +58,15 @@ package codetop100;
 
 /**
  * 环形链表
+ * https://leetcode.cn/problems/linked-list-cycle/description/
+ *
  * @author Jayden
  * @date 2026-02-15 21:44:46
  */
-public class T22_P141_LinkedListCycle {
+public class T22_P141_简单_环形链表_快慢指针 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T22_P141_LinkedListCycle().new Solution();
+	 	 Solution solution = new T22_P141_简单_环形链表_快慢指针().new Solution();
 	 }
 	 
 //力扣代码

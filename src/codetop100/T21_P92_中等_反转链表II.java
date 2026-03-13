@@ -39,13 +39,15 @@ package codetop100;
 
 /**
  * 反转链表 II
+ * https://leetcode.cn/problems/reverse-linked-list-ii/solutions/634701/fan-zhuan-lian-biao-ii-by-leetcode-solut-teyq/
+ *
  * @author Jayden
  * @date 2025-10-27 07:18:02
  */
-public class T21_P92_ReverseLinkedListIi {
+public class T21_P92_中等_反转链表II {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T21_P92_ReverseLinkedListIi().new Solution();
+	 	 Solution solution = new T21_P92_中等_反转链表II().new Solution();
 	 }
 	 
 //力扣代码

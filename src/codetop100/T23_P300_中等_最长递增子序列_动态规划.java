@@ -55,10 +55,10 @@ package codetop100;
  * @author Jayden
  * @date 2025-10-16 18:37:38
  */
-public class T23_P300_中等_最长递增子序列 {
+public class T23_P300_中等_最长递增子序列_动态规划 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T23_P300_中等_最长递增子序列().new Solution();
+	 	 Solution solution = new T23_P300_中等_最长递增子序列_动态规划().new Solution();
 	 }
 	 
 //力扣代码

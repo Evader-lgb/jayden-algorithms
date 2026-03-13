@@ -48,10 +48,10 @@ package codetop100;
  * @author Jayden
  * @date 2025-10-25 18:32:23
  */
-public class T25_P143_ReorderList {
+public class T25_P143_中等_重排链表 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T25_P143_ReorderList().new Solution();
+	 	 Solution solution = new T25_P143_中等_重排链表().new Solution();
 	 }
 	 
 //力扣代码

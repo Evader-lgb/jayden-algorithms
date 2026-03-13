@@ -37,13 +37,15 @@ import java.util.List;
 
 /**
  * 螺旋矩阵
+ * https://leetcode.cn/problems/spiral-matrix/description/
+ *
  * @author Jayden
  * @date 2026-02-14 07:57:21
  */
-public class T24_P54_SpiralMatrix {
+public class T24_P54_中等_螺旋矩阵_模拟 {
 	 public static void main(String[] args) {
 	 	 //测试代码
-	 	 Solution solution = new T24_P54_SpiralMatrix().new Solution();
+	 	 Solution solution = new T24_P54_中等_螺旋矩阵_模拟().new Solution();
           System.out.println(solution.spiralOrder(new int[][]{{1,2,3},{4,5,6},{7,8,9}}));
 	 }
 
